@@ -1,10 +1,11 @@
 import React from 'react'
 import DonationCard from './DonationCard'
 
-function Donation() {
+function Donation({name,message}) {
   return (
     <div>
-      <DonationCard/>
+      <DonationCard name="Masyntech" message="Save the children"/>
+      <DonationCard name="Coding" message="Save the nation"/>
     </div>
   )
 }
