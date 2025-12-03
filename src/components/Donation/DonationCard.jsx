@@ -1,6 +1,8 @@
 import React from 'react'
 
-function DonationCard() {
+function DonationCard(props) {
+    console.log(props.name)
+    console.log(props.message)
   return (
     <div>
        <section style={{
@@ -12,6 +14,8 @@ function DonationCard() {
          <h2>Give Donation</h2>
         <p>Save African Children</p>
         <button style={{color: "green"}}>Pay Now</button>
+        <h3>Hello! {props.name}</h3>
+        <h3>Hello! {props.message}</h3>
        </section>
     </div>
   )
