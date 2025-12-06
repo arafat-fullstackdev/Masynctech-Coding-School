@@ -8,6 +8,7 @@ import UseStateHook from './components/Hooks/useStateHook'
 import ThemSwitcher from './components/Hooks/ThemSwitcher'
 import Form from './components/Hooks/Form'
 import HookProject from './components/Hooks/HookProject'
+import FeedBack from './components/Hooks/FeedBack'
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
        {/* <UseStateHook/>
        <ThemSwitcher/> */}
        {/* <Form/> */}
-       <HookProject/>
+       {/* <HookProject/> */}
+       <FeedBack/>
       </div>
       
     </>
