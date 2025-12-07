@@ -9,6 +9,7 @@ import ThemSwitcher from './components/Hooks/ThemSwitcher'
 import Form from './components/Hooks/Form'
 import HookProject from './components/Hooks/HookProject'
 import FeedBack from './components/Hooks/FeedBack'
+import Map from './components/Hooks/Map'
 
 function App() {
 
@@ -21,7 +22,8 @@ function App() {
        <ThemSwitcher/> */}
        {/* <Form/> */}
        {/* <HookProject/> */}
-       <FeedBack/>
+       {/* <FeedBack/> */}
+       <Map/>
       </div>
       
     </>
