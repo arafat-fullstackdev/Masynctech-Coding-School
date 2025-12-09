@@ -26,6 +26,7 @@ function Todo() {
           onChange={(e) => setTodos(e.target.value)}
           type="text"
         />
+        <button>Delete</button>
       </form>
     </div>
   );
