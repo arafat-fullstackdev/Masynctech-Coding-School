@@ -25,3 +25,16 @@ app.post('/sign', (req,res)=>{
 app.listen(3000, ()=>{
     console.log(' Server is running on port http://localhost:3000')
 })
+
+//Express
+app.get('/user/:id', (req, res, next) => {
+  console.log('ID:', req.params.id)
+  next()
+}, (req, res, next) => {
+  res.send('User Info')
+})
+
+// handler for the /user/:id path, which prints the user ID
+app.get('/user/:id', (req, res, next) => {
+  res.send(req.params.id)
+})
