@@ -33,7 +33,23 @@ app.get('/user/:id', (req, res, next) => {
 }, (req, res, next) => {
   res.send('User Info')
 })
+//? Search Route
+// app.get('/product/search', (req,res) =>{
+//   res.send('Query Starting Demo!')
+// })
 
+//! Query string
+app.get('/product/search', (req,res) =>{
+  res.send('Query Starting Demo!')
+  console.log(req.query)
+})
+
+app.get('/profile',
+  function(req,res){
+    console.log(req.query.name)
+    res.send()
+  }
+)
 // handler for the /user/:id path, which prints the user ID
 app.get('/user/:id', (req, res, next) => {
   res.send(req.params.id)
